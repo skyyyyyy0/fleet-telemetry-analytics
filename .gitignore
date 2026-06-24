@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual Environment
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Mac
+.DS_Store
+
+# Excel Temporary Files
+~$*.xlsx
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# System Files
+Thumbs.db
