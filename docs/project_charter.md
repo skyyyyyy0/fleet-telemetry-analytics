@@ -151,25 +151,6 @@ The project will be considered successful if it:
 
 ---
 
-## Project Timeline
-
-### Week 1
-
-- Signal Validation
-- Data Assessment
-- FEI-Lite Framework Design
-
-### Week 2
-
-- KPI Development
-- FEI-Lite Calculation
-- SQL Analytics
-- Tableau Dashboard
-- GitHub Documentation
-- Portfolio Packaging
-
----
-
 ## Final Goal
 
 Develop a deployable Fleet Telemetry Analytics framework that transforms GeoTab telemetry data into actionable fuel-efficiency insights while establishing a scalable foundation for future Full FEI and machine-learning-based fleet analytics.
