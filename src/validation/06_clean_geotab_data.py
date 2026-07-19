@@ -32,7 +32,10 @@ signal_map = {
 clean_df = df[df["diagnostic_id"].isin(signal_map.keys())].copy()
 
 clean_df["signal"] = clean_df["diagnostic_id"].map(signal_map)
-clean_df["dateTime"] = pd.to_datetime(clean_df["dateTime"], errors="coerce")
+clean_df["dateTime"] = (
+    pd.to_datetime(clean_df["dateTime"], errors="coerce", utc=True)
+    .dt.tz_convert("Asia/Seoul")
+)
 clean_df["data"] = pd.to_numeric(clean_df["data"], errors="coerce")
 
 clean_df = clean_df[

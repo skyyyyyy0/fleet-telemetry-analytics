@@ -104,7 +104,10 @@ def calculate_driving_events(vehicle_df):
 
 def build_kpi_dataset(input_path, period_name):
     df = pd.read_csv(input_path)
-    df["dateTime"] = pd.to_datetime(df["dateTime"], errors="coerce")
+    df["dateTime"] = (
+        pd.to_datetime(df["dateTime"], errors="coerce", utc=True)
+        .dt.tz_convert("Asia/Seoul")
+    )
 
     results = []
 
