@@ -1,0 +1,8 @@
+metric,value
+before_fleet_median_driving_events_per_100km,439.12954218846227
+fleet_avg_before_dss,79.1289790748587
+fleet_avg_after_dss,84.67808038152391
+fleet_avg_dss_change,5.549101306665213
+fleet_avg_driving_risk_change_pct,2.0672652465996135
+vehicles_smoothness_improved,5.0
+vehicles_smoothness_worsened,6.0

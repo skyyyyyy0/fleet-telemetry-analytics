@@ -1,0 +1,11 @@
+metric,value
+fleet_avg_before_fei_lite,95.01239117172776
+fleet_avg_after_fei_lite,93.87561318644437
+fleet_avg_fei_change,-1.136777985283377
+fleet_avg_fei_change_pct,-0.9749109790125536
+vehicles_improved,2
+vehicles_declined,10
+top_vehicle,HDV_04
+top_vehicle_after_fei_lite,100.0
+bottom_vehicle,LDV_08
+bottom_vehicle_after_fei_lite,85.1330703350265

@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+
+# Private and raw data
+data/raw/
+data/private/
+vehicle_id_mapping*.csv
+
+# Packaged Tableau files that may contain embedded data
+*.twbx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Excel temporary files
+~$*.xlsx
+
+# Logs
+*.log
+
+# Private mapping
+config/vehicle_mapping.private.csv
+
+# Granular processed telemetry
+data/processed/clean_dataset.csv
+data/processed/before_clean_dataset.csv
+data/processed/after_clean_dataset.csv
+
+# Tableau extracts
+*.hyper

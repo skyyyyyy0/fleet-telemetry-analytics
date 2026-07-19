@@ -1,0 +1,8 @@
+metric,value
+before_fleet_median_idle_ratio,0.13595705560404442
+fleet_avg_before_ies,97.4621321183459
+fleet_avg_after_ies,95.20227796017603
+fleet_avg_ies_change,-2.259854158169882
+fleet_avg_idle_change_pct,2.615947448640901
+vehicles_idle_improved,5.0
+vehicles_idle_worsened,7.0

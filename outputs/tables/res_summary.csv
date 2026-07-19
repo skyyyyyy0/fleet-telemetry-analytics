@@ -1,0 +1,8 @@
+metric,value
+before_fleet_median_rpm_efficiency_ratio,0.2946245220035153
+fleet_avg_before_res,94.4504035571231
+fleet_avg_after_res,94.49904630665758
+fleet_avg_res_change,0.048642749534462126
+fleet_avg_rpm_efficiency_change_pct,1.567904497172723
+vehicles_improved,8.0
+vehicles_declined,4.0
