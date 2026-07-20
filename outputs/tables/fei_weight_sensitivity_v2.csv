@@ -1,0 +1,4 @@
+weight_scenario,valid_vehicle_count,missing_vehicle_count,fleet_avg_before_fei_lite,fleet_avg_after_fei_lite,fleet_absolute_change,fleet_percentage_change,mean_vehicle_percentage_change,vehicles_improved,vehicles_unchanged,vehicles_declined,vehicles_missing,status_changed_vs_primary,after_rank_correlation_vs_primary
+primary_50_20_20_10,12,0,104.42858262379337,103.71522101389492,-0.7133616098984561,-0.6831095395293829,-0.5655980228334153,4,0,8,0,0,1.0
+legacy_40_25_20_15,12,0,105.66967092014748,105.31858988410404,-0.3510810360434391,-0.33224390024716194,-0.13993992547654632,6,0,6,0,2,1.0
+equal_25_25_25_25,12,0,107.82877894647226,108.0842864991103,0.2555075526380506,0.23695673375369314,0.6322984442374415,6,0,6,0,2,0.9930069930069931
