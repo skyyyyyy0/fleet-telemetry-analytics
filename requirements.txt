@@ -4,3 +4,5 @@ matplotlib
 jupyter
 requests
 openpyxl
+python-dotenv
+mygeotab

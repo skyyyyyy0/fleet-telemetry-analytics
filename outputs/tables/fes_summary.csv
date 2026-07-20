@@ -1,9 +1,12 @@
 metric,value
-fleet_avg_before_fes,97.0861219095438
-fleet_avg_after_fes,94.67971526287592
-fleet_avg_fes_change,-2.406406646667873
-fleet_avg_fuel_efficiency_change_pct,-3.730722813782284
+valid_vehicle_count,12.0
+missing_vehicle_count,0.0
+fleet_avg_before_fes,97.16491033261626
+fleet_avg_after_fes,94.86440340039832
+fleet_avg_fes_change,-2.300506932217946
+fleet_avg_fuel_efficiency_change_pct,-3.4429834049905543
 vehicles_improved,3.0
+vehicles_unchanged,0.0
 vehicles_declined,9.0
 heavy_duty_vehicle_count,4.0
-porter_vehicle_count,8.0
+light_duty_vehicle_count,8.0

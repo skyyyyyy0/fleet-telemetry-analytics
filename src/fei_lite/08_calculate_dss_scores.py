@@ -15,8 +15,8 @@ def add_driving_risk_metrics(data):
     data = data.copy()
 
     data["total_driving_events"] = (
-        data["harsh_braking_count"]
-        + data["side_accel_count"]
+        data["harsh_braking_event_count"]
+        + data["side_accel_event_count"]
     )
 
     data["driving_events_per_100km"] = np.where(
@@ -44,14 +44,14 @@ print(f"Before fleet median driving events per 100km: {before_risk_median:.4f}")
 before_df = before_df[[
     "vehicle",
     "distance_km",
-    "harsh_braking_count",
-    "side_accel_count",
+    "harsh_braking_event_count",
+    "side_accel_event_count",
     "total_driving_events",
     "driving_events_per_100km"
 ]].rename(columns={
     "distance_km": "before_distance_km",
-    "harsh_braking_count": "before_harsh_braking_count",
-    "side_accel_count": "before_side_accel_count",
+    "harsh_braking_event_count": "before_harsh_braking_event_count",
+    "side_accel_event_count": "before_side_accel_event_count",
     "total_driving_events": "before_total_driving_events",
     "driving_events_per_100km": "before_driving_events_per_100km"
 })
@@ -59,14 +59,14 @@ before_df = before_df[[
 after_df = after_df[[
     "vehicle",
     "distance_km",
-    "harsh_braking_count",
-    "side_accel_count",
+    "harsh_braking_event_count",
+    "side_accel_event_count",
     "total_driving_events",
     "driving_events_per_100km"
 ]].rename(columns={
     "distance_km": "after_distance_km",
-    "harsh_braking_count": "after_harsh_braking_count",
-    "side_accel_count": "after_side_accel_count",
+    "harsh_braking_event_count": "after_harsh_braking_event_count",
+    "side_accel_event_count": "after_side_accel_event_count",
     "total_driving_events": "after_total_driving_events",
     "driving_events_per_100km": "after_driving_events_per_100km"
 })
