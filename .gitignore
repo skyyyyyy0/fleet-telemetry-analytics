@@ -1,4 +1,4 @@
-# Python
+# Python cache and compiled files
 __pycache__/
 *.py[cod]
 
@@ -16,13 +16,18 @@ data/raw/
 data/private/
 vehicle_id_mapping*.csv
 
-# Packaged Tableau files that may contain embedded data
-*.twbx
+# Private vehicle mapping
+config/vehicle_mapping.private.csv
 
-# Jupyter
+# Granular processed telemetry
+data/processed/clean_dataset.csv
+data/processed/before_clean_dataset.csv
+data/processed/after_clean_dataset.csv
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Editor
+# Editor settings
 .vscode/
 
 # Operating system files
@@ -32,16 +37,12 @@ Thumbs.db
 # Excel temporary files
 ~$*.xlsx
 
-# Logs
+# Log files
 *.log
 
-# Private mapping
-config/vehicle_mapping.private.csv
-
-# Granular processed telemetry
-data/processed/clean_dataset.csv
-data/processed/before_clean_dataset.csv
-data/processed/after_clean_dataset.csv
-
-# Tableau extracts
+# Tableau packaged files and extracts
+*.twbx
 *.hyper
+
+# Tableau temporary and recovery files
+*.twbr
