@@ -20,7 +20,7 @@ The results are presented through interactive Tableau dashboards designed to sup
 
 - **Interpretation:** Route, payload, weather, and driver conditions were not fully controlled. Therefore, the results should be interpreted as observed before-and-after associations rather than evidence that the fuel-saving device directly caused the changes.
 
-![Fleet FEI-Lite Performance Overview](images/dashboard_fleet_overview_v2.png)
+![Fleet FEI-Lite Performance Overview](outputs/screenshots/Dashboard/dashboard_fleet_overview_v2.png)
 
 ---
 
@@ -211,7 +211,7 @@ At the vehicle level, **4 vehicles improved** and **8 declined**. `LDV_06` recor
 
 The ranking and the amount of change should be interpreted separately. A vehicle could maintain a relatively high After-period score while still declining from its own Before-period performance. Overall, the dashboard shows substantial vehicle-level variation and no consistent fleet-wide improvement during the observed period.
 
-![Fleet FEI-Lite Performance Overview](images/dashboard_fleet_overview_v2.png)
+![Fleet FEI-Lite Performance Overview](outputs/screenshots/Dashboard/dashboard_fleet_overview_v2.png)
 
 ### Fuel Efficiency Analysis
 
@@ -221,7 +221,7 @@ The fleet-average FES index decreased from **100.05** in the Before period to **
 
 These results indicate that fuel-efficiency performance weakened for most vehicles during the After period. However, FES alone did not fully explain the final vehicle rankings because FEI-Lite also incorporated RPM efficiency, idling efficiency, and driving smoothness.
 
-![Fleet Fuel Efficiency Analytics](images/dashboard_fuel_analytics_v2.png)
+![Fleet FEI-Lite Performance Overview](outputs/screenshots/Dashboard/dashboard_fleet_overview_v2.png)
 
 ### Driver Behavior Analysis
 
@@ -237,7 +237,7 @@ The improvement in DSS partially offset the reductions in FES and IES, which hel
 
 The vehicle-level comparisons also show that operational behavior varied across the fleet. Some vehicles improved through more efficient RPM control, reduced idling, or smoother driving, while others weakened in one or more components. Therefore, the final performance changes cannot be explained by fuel consumption alone.
 
-![Fleet Driver Behavior Analytics](images/dashboard_driver_behavior_v2.png)
+![Fleet Driver Behavior Analytics](outputs/screenshots/Dashboard/dashboard_driver_behavior_v2.png)
 
 These dashboards support vehicle-level diagnosis and help identify which performance components require further investigation. Because route, payload, weather, traffic, and driver conditions were not fully controlled, the observed changes should not be interpreted as causal effects of the fuel-saving device.
 
