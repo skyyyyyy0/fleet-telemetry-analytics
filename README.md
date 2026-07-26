@@ -20,8 +20,6 @@ The results are presented through interactive Tableau dashboards designed to sup
 
 - **Interpretation:** Route, payload, weather, and driver conditions were not fully controlled. Therefore, the results should be interpreted as observed before-and-after associations rather than evidence that the fuel-saving device directly caused the changes.
 
-![Fleet FEI-Lite Performance Overview](outputs/screenshots/Dashboard/dashboard_fleet_overview_v2.png)
-
 ---
 
 ## Business Problem
@@ -221,7 +219,7 @@ The fleet-average FES index decreased from **100.05** in the Before period to **
 
 These results indicate that fuel-efficiency performance weakened for most vehicles during the After period. However, FES alone did not fully explain the final vehicle rankings because FEI-Lite also incorporated RPM efficiency, idling efficiency, and driving smoothness.
 
-![Fleet FEI-Lite Performance Overview](outputs/screenshots/Dashboard/dashboard_fleet_overview_v2.png)
+![Fleet Fuel Efficiency Analytics](outputs/screenshots/Dashboard/dashboard_fuel_analytics_v2.png)
 
 ### Driver Behavior Analysis
 
