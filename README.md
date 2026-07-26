@@ -246,7 +246,6 @@ These dashboards support vehicle-level diagnosis and help identify which perform
 | Data Source | Geotab API, StatusData | Extracted vehicle telemetry and diagnostic records |
 | Programming | Python | Built the data-processing and scoring pipeline |
 | Data Processing | Pandas, NumPy | Cleaned, transformed, aggregated, and validated telemetry data |
-| Development | Jupyter Notebook | Supported exploratory analysis and result validation |
 | Visualization | Tableau | Developed fleet, fuel-efficiency, and driver-behavior dashboards |
 | Version Control | Git, GitHub | Managed source code, documentation, and project history |
 
@@ -258,33 +257,31 @@ This project uses custom Python scripts rather than a machine-learning framework
 
 ```text
 fleet-telemetry-analytics/
+├── config/                         # Analysis-period configuration
 ├── data/
-│   ├── raw/                    # Private raw extracts; excluded from Git
-│   ├── private/                # Private mappings and identifiers; excluded from Git
-│   ├── processed/              # Anonymized KPI and FEI-Lite datasets
-│   └── sample/                 # Sanitized sample data for portfolio review
+│   ├── processed/                  # Anonymized analysis-ready datasets
+│   └── signal_dictionary.xlsx      # Telemetry signal reference
 │
 ├── src/
-│   ├── validation/             # Signal, data-quality, and final-output validation
-│   ├── analytics/              # Data cleaning and KPI preparation
-│   ├── fei_lite/               # Component scoring and final FEI-Lite calculation
-│   └── tableau/                # Tableau-ready dataset generation
+│   ├── validation/                 # Signal, data-quality, and output validation
+│   ├── fei_lite/                   # KPI preparation and FEI-Lite calculation
+│   └── tableau/                    # Tableau-ready dataset generation
 │
 ├── outputs/
-│   ├── tables/                 # Summary tables and final analytical outputs
-│   ├── charts/                 # Supporting analytical charts
-│   └── screenshots/            # Final Tableau dashboard screenshots
+│   ├── tables/                     # Final analytical tables
+│   ├── charts/                     # Supporting analytical charts
+│   ├── reports/                    # Validation and methodology reports
+│   ├── screenshots/                # Tableau dashboard screenshots
+│   └── signal_availability_summary.csv
 │
-├── dashboards/                 # Tableau workbook files
-├── docs/                       # Methodology and project documentation
-├── images/                     # Images displayed in the README
+├── docs/                           # Methodology and project documentation
+├── fleet_dashboard.twb             # Tableau workbook
 ├── README.md
 ├── requirements.txt
-├── .gitignore
-└── LICENSE
+└── .gitignore
 ```
 
-The repository separates private source data, reusable processing logic, analysis-ready outputs, and presentation materials. This structure makes the analytical workflow easier to review while preventing confidential files from being included in the public project.
+Private raw extracts, credentials, and vehicle-identifier mappings are stored locally and excluded from the public repository through `.gitignore`. The public repository contains only anonymized processed data, reusable analytical code, validated outputs, and presentation materials.
 
 ---
 
@@ -293,7 +290,7 @@ The repository separates private source data, reusable processing logic, analysi
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-github-username>/fleet-telemetry-analytics.git
+git clone https://github.com/skyyyyyy0/fleet-telemetry-analytics.git
 cd fleet-telemetry-analytics
 ```
 
