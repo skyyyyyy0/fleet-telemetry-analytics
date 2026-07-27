@@ -339,7 +339,7 @@ The primary generated outputs include:
 - `fei_lite_summary_v2.csv`
 - `data_quality_summary.csv`
 
-After generating the Tableau-ready dataset, open the workbook in `dashboards/` and refresh its data source to review the final dashboards.
+After generating the Tableau-ready dataset, open `fleet_dashboard.twb` and refresh its data source to review the final dashboards.
 
 Direct Geotab API extraction requires authorized account credentials and private vehicle-mapping files. These credentials and mappings are not included in the public repository.
 
