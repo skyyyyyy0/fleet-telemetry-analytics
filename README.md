@@ -42,14 +42,14 @@ The analysis was designed to support fleet monitoring and operational decision-m
 
 The analysis used approximately **1.7 million event-driven Geotab StatusData records** collected from 12 anonymized commercial fleet vehicles.
 
-| Category | Description |
-|---|---|
-| Fleet size | 12 vehicles |
-| Vehicle classes | 4 heavy-duty vehicles and 8 light-duty vehicles |
-| Data source | Geotab StatusData |
-| Comparison periods | Vehicle-specific Before and After periods of approximately 30 days each |
-| Reporting structure | Event-driven records with irregular time intervals |
-| Vehicle identifiers | Anonymized as `HDV_01`–`HDV_04` and `LDV_01`–`LDV_08` |
+| Category            | Description                                                             |
+| ------------------- | ----------------------------------------------------------------------- |
+| Fleet size          | 12 vehicles                                                             |
+| Vehicle classes     | 4 heavy-duty vehicles and 8 light-duty vehicles                         |
+| Data source         | Geotab StatusData                                                       |
+| Comparison periods  | Vehicle-specific Before and After periods of approximately 30 days each |
+| Reporting structure | Event-driven records with irregular time intervals                      |
+| Vehicle identifiers | Anonymized as `HDV_01`–`HDV_04` and `LDV_01`–`LDV_08`                   |
 
 Eight vehicles had an installation date of **May 18, 2026**, while the remaining four had an installation date of **May 19, 2026**. The comparison windows were aligned with each vehicle’s installation date to maintain consistent Before and After observation periods.
 
@@ -93,7 +93,7 @@ The four component scores were then combined using the finalized FEI-Lite weight
 
 The final vehicle-level scores and fleet summaries were exported as analysis-ready datasets and validated for consistency across the calculation outputs. Tableau dashboards were then developed to present fleet-level changes, individual vehicle performance, fuel-efficiency results, and operational behavior patterns.
 
---- 
+---
 
 ## KPI and FEI-Lite Methodology
 
@@ -103,12 +103,12 @@ FEI-Lite was developed as a practical vehicle-performance index using the teleme
 
 The following KPIs were calculated separately for each vehicle and analysis period:
 
-| Component | Underlying KPI | Interpretation | Weight |
-|---|---|---|---:|
-| Fuel Efficiency Score (FES) | Distance traveled per liter of fuel | Higher is better | 50% |
-| RPM Efficiency Score (RES) | Share of engine-on time within the efficient RPM range | Higher is better | 20% |
-| Idle Efficiency Score (IES) | Share of engine-on time spent idling | Lower is better | 20% |
-| Driving Smoothness Score (DSS) | Harsh braking and side-acceleration events per 100 km | Lower is better | 10% |
+| Component                      | Underlying KPI                                         | Interpretation   | Weight |
+| ------------------------------ | ------------------------------------------------------ | ---------------- | -----: |
+| Fuel Efficiency Score (FES)    | Distance traveled per liter of fuel                    | Higher is better |    50% |
+| RPM Efficiency Score (RES)     | Share of engine-on time within the efficient RPM range | Higher is better |    20% |
+| Idle Efficiency Score (IES)    | Share of engine-on time spent idling                   | Lower is better  |    20% |
+| Driving Smoothness Score (DSS) | Harsh braking and side-acceleration events per 100 km  | Lower is better  |    10% |
 
 ### 2. Fuel Efficiency Score (FES)
 
@@ -201,6 +201,8 @@ This approach allowed the final score to use all valid information without autom
 
 Three Tableau dashboards were developed to translate the vehicle-level KPIs and FEI-Lite results into clear operational insights. Together, they present the overall fleet outcome, isolate changes in fuel efficiency, and show how RPM management, idling, and driving smoothness contributed to the final results.
 
+[View the Interactive Tableau Dashboard](https://public.tableau.com/app/profile/haneul.jang/viz/FleetTelematicsAnalytics/FleetOverviewV2)
+
 ### Fleet Overview
 
 The Fleet Overview dashboard summarizes the Before and After FEI-Lite results for all 12 vehicles. The fleet-average score decreased from **104.43** to **103.72**, representing an absolute change of **-0.71 points** and a percentage change of **-0.68%**.
@@ -241,13 +243,13 @@ These dashboards support vehicle-level diagnosis and help identify which perform
 
 ## Technology Stack
 
-| Category | Technologies | Purpose |
-|---|---|---|
-| Data Source | Geotab API, StatusData | Extracted vehicle telemetry and diagnostic records |
-| Programming | Python | Built the data-processing and scoring pipeline |
-| Data Processing | Pandas, NumPy | Cleaned, transformed, aggregated, and validated telemetry data |
-| Visualization | Tableau | Developed fleet, fuel-efficiency, and driver-behavior dashboards |
-| Version Control | Git, GitHub | Managed source code, documentation, and project history |
+| Category        | Technologies           | Purpose                                                          |
+| --------------- | ---------------------- | ---------------------------------------------------------------- |
+| Data Source     | Geotab API, StatusData | Extracted vehicle telemetry and diagnostic records               |
+| Programming     | Python                 | Built the data-processing and scoring pipeline                   |
+| Data Processing | Pandas, NumPy          | Cleaned, transformed, aggregated, and validated telemetry data   |
+| Visualization   | Tableau                | Developed fleet, fuel-efficiency, and driver-behavior dashboards |
+| Version Control | Git, GitHub            | Managed source code, documentation, and project history          |
 
 This project uses custom Python scripts rather than a machine-learning framework. FEI-Lite was developed as a rule-based analytical index using operational KPIs derived from the available telemetry signals.
 

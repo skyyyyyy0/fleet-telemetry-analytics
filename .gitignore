@@ -46,3 +46,6 @@ Thumbs.db
 
 # Tableau temporary and recovery files
 *.twbr
+
+# Local Tableau workbook
+/fleet_dashboard.twb
